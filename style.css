@@ -1,0 +1,94 @@
+/* ===== Nền tảng ===== */
+body {
+  background-color: #fffaf3;
+  font-family: "Gill Sans", "Trebuchet MS", sans-serif;
+  margin: 0;
+  padding: 0 14px;
+}
+
+/* ===== Skip link ===== */
+.skip-link { font-size: 1.1em; }
+
+/* ===== Header & điều hướng ===== */
+header {
+  background-color: lightgray;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+/* Bước: nav dùng inline-block, rộng ~80% */
+nav {
+  display: inline-block;
+  width: 80%;
+  text-align: left;
+}
+
+nav ul {
+  list-style-type: none;   /* bỏ dấu chấm danh sách */
+  padding-left: 30px;
+}
+
+/* Bước: quy tắc li cũ đã được comment lại
+li {
+  display: block;
+  margin: 10px 0;
+}
+*/
+nav li {
+  display: inline-block;
+  margin-right: 22px;
+}
+
+/* Bộ chọn hậu duệ: chỉ ảnh trong nav, rộng ~10% */
+nav img {
+  width: 10%;
+  position: relative;
+  top: 20px;
+}
+
+header h1 {
+  font-family: "Apple Chancery", "Lucida Calligraphy", cursive;
+  font-style: italic;
+  color: darkblue;
+  font-size: 2.6em;
+  margin: 10px 0 0;
+}
+
+/* ===== Nội dung chính ===== */
+main {
+  display: block;
+  background-color: #ffff55;
+  margin-top: 28px;
+  padding: 1px 0;
+}
+main p { font-size: 1.5em; margin: 20px 0; }
+
+/* ===== Lưới 2 cột (Neighborhood Walks) ===== */
+.grid {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  justify-content: space-around;  /* chia đều khoảng trống hai bên */
+  align-items: end;               /* ảnh thấp căn đáy ô */
+  row-gap: 10px;
+  padding: 10px 0;
+}
+
+/* Bộ chọn hậu duệ: chỉ ảnh trong .grid */
+.grid img { width: 100%; }
+
+/* ===== Flex (Michigan Parks) ===== */
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.flex img { width: 18%; }   /* nằm ngoài .grid nên không bị ảnh hưởng */
+
+/* ===== Footer ===== */
+footer {
+  background-color: lightgray;
+  margin-top: 20px;
+  padding: 1px 4px;
+  font-size: 0.95em;
+}
